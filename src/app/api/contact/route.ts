@@ -13,7 +13,7 @@ export async function POST(request: Request) {
     );
   }
 
-  let client = new SendMailClient({ url, token });
+  const client = new SendMailClient({ url, token });
 
   try {
     const formData = await request.formData();
