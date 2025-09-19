@@ -5,14 +5,14 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "CrystalView AI",
+  title: "CrystalView",
   description: "AI-Powered Solutions for Your Business",
 };
 
 const Header = () => (
   <header className="py-4 px-6 border-b">
     <nav>
-      <p className="font-bold text-lg">CrystalView AI</p>
+      <p className="font-bold text-lg">CrystalView</p>
     </nav>
   </header>
 );
@@ -20,7 +20,7 @@ const Header = () => (
 const Footer = () => (
   <footer className="py-4 px-6 border-t mt-auto">
     <p className="text-center text-sm text-gray-500">
-      © {new Date().getFullYear()} CrystalView AI. All rights reserved.
+      © {new Date().getFullYear()} CrystalView. All rights reserved.
     </p>
   </footer>
 );
