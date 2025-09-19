@@ -21,7 +21,7 @@ export const Header = () => {
         >
           CrystalView
         </Link>
-        <nav className="hidden md:flex gap-6">
+        <nav className="hidden md:flex gap-6 items-center">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -31,6 +31,14 @@ export const Header = () => {
               {link.label}
             </Link>
           ))}
+          <Link
+            href="https://vision.crystalview.ai"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-6 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
+          >
+            Vision Login
+          </Link>
         </nav>
         <div className="md:hidden">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
@@ -52,6 +60,15 @@ export const Header = () => {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href="https://vision.crystalview.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg font-medium text-primary"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Vision Login
+            </Link>
           </nav>
         </div>
       )}
