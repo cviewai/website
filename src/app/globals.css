@@ -13,4 +13,5 @@
 body {
   background-color: theme(colors.background);
   color: theme(colors.foreground);
+  font-family: var(--font-inter), sans-serif;
 }

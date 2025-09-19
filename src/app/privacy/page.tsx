@@ -1,6 +1,12 @@
 import fs from "fs";
 import path from "path";
 import ReactMarkdown from "react-markdown";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Read the CrystalView Privacy Policy.",
+};
 
 // This is a Server Component, so we can read files directly
 export default function PrivacyPolicyPage() {

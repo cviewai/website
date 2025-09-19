@@ -1,40 +1,33 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Link from "next/link";
+import { Header } from "@/components/Header";
+import { inter, poppins } from "./fonts";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "CrystalView",
+  title: {
+    template: "%s | CrystalView",
+    default: "CrystalView - AI-Powered Financial Solutions",
+  },
   description: "AI-Powered Solutions for Your Business",
+  icons: {
+    icon: "/favicon.svg",
+  },
+  openGraph: {
+    title: "CrystalView",
+    description: "AI-Powered Solutions for Your Business",
+    siteName: "CrystalView",
+    images: [
+      {
+        url: "/og-image.png", // Must be an absolute URL in production
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
-
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/contact", label: "Contact" },
-];
-
-const Header = () => (
-  <header className="py-4 px-6 border-b">
-    <div className="container mx-auto flex justify-between items-center">
-      <Link href="/" className="font-bold text-lg">
-        CrystalView
-      </Link>
-      <nav className="hidden md:flex gap-6">
-        {navLinks.map((link) => (
-          <Link
-            key={link.href}
-            href={link.href}
-            className="text-sm font-medium text-gray-500 hover:text-foreground"
-          >
-            {link.label}
-          </Link>
-        ))}
-      </nav>
-    </div>
-  </header>
-);
 
 const Footer = () => (
   <footer className="py-6 px-6 border-t">
@@ -66,8 +59,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} flex flex-col min-h-screen`}>
+    <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
+      <body className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow container mx-auto px-6 py-8">
           {children}
