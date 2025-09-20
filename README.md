@@ -65,8 +65,38 @@ The server will start with Turbopack for a fast development experience. Open [ht
 
 ---
 
+## Code Quality & CI
+
+This project uses a combination of local and server-side checks to ensure high code quality and a stable main branch.
+
+### Local Pre-Commit Hooks
+
+We use the [pre-commit](https://pre-commit.com/) framework to automatically format code before it is committed. The hooks are configured in `.pre-commit-config.yaml` and use Prettier to format all relevant files.
+
+**To activate the hooks**, you must first install the `pre-commit` tool itself. On Arch Linux, this can be done via `yay -S pre-commit`. For other systems, see the [official installation guide](https://pre-commit.com/#install).
+
+Once the tool is installed, you must run this command once inside your cloned repository:
+
+```bash
+pre-commit install
+```
+
+After this, the hooks will run automatically on every `git commit`.
+
+### Continuous Integration (CI)
+
+We use [GitHub Actions](/.github/workflows/main.yml) to run a full production build (`npm run build`) on every push and pull request to the `master` branch. This acts as a safety net to ensure that no changes that would break the production deployment are merged.
+
+---
+
 ## Deployment
 
-The easiest way to deploy this Next.js application is to use the [Vercel Platform](https://vercel.com/new).
+This project is configured for and deployed on the [Vercel Platform](https://vercel.com/). Vercel is the recommended hosting provider as it is built by the creators of Next.js and offers a seamless, zero-configuration deployment experience.
 
-When deploying, remember to add your `ZEPTO_API_KEY` as an environment variable in the Vercel project settings.
+To deploy your own instance:
+
+1.  Connect your Git repository to Vercel.
+2.  Add your `ZEPTO_API_KEY` as an environment variable in the Vercel project settings.
+3.  Push to your main branch to trigger a deployment.
+
+**Note:** This project is currently configured to be deployed on Vercel's free Hobby tier by using a **public** GitHub repository.
