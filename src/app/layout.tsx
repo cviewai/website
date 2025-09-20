@@ -6,6 +6,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.crystalview.ai"),
   title: {
     template: "%s | CrystalView",
     default: "CrystalView - AI-Powered Financial Solutions",
