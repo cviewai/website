@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { href: "/", label: "Home" },
+  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -15,10 +16,7 @@ export const Header = () => {
   return (
     <header className="py-4 px-6 border-b">
       <div className="container mx-auto flex justify-between items-center">
-        <Link
-          href="/"
-          className="font-poppins font-bold text-lg tracking-wide"
-        >
+        <Link href="/" className="font-poppins font-bold text-lg tracking-wide">
           CrystalView
         </Link>
         <nav className="hidden md:flex gap-6 items-center">
