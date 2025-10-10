@@ -15,8 +15,7 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }) {
-  const resolvedParams = await params;
-  const post = getPostBySlug(resolvedParams.slug);
+  const post = getPostBySlug(params.slug);
 
   if (!post) {
     return notFound();
@@ -33,8 +32,7 @@ export default async function PostPage({
 }: {
   params: { slug: string };
 }) {
-  const resolvedParams = await params;
-  const post = getPostBySlug(resolvedParams.slug);
+  const post = getPostBySlug(params.slug);
 
   if (!post) {
     return notFound();
