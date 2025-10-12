@@ -13,9 +13,10 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const post = getPostBySlug(params.slug);
+  const resolvedParams = await params;
+  const post = getPostBySlug(resolvedParams.slug);
 
   if (!post) {
     return notFound();
@@ -30,9 +31,10 @@ export async function generateMetadata({
 export default async function PostPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const post = getPostBySlug(params.slug);
+  const resolvedParams = await params;
+  const post = getPostBySlug(resolvedParams.slug);
 
   if (!post) {
     return notFound();
