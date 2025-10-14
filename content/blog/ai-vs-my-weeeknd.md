@@ -67,8 +67,11 @@ I liked the output, copied it and created my final output. I also asked it to su
 **Final Conclusion**
 
 **Time spent on adjustments and getting the final result:** 30 minutes
+
 **Time saved – a good 4 hours**
 
 **Is validation still required each time?** Yes
+
 **What could have been improved?** Perhaps asking the model to validate the final numbers right from the initial prompt.
+
 **Is it making my day better?** Absolutely, yes.
