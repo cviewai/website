@@ -6,12 +6,11 @@ export const Hero = () => {
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background to-secondary" />
       <div className="container mx-auto px-6 text-center">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none bg-clip-text text-transparent bg-gradient-to-r from-primary to-foreground">
-          Transform Your Business with AI-Powered Solutions
+          Transform Your Business with AI-Powered Finance Operations
         </h1>
         <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-500 md:text-xl">
-          We provide cutting-edge data analytics and AI-driven automation to help
-          you harness the power of data, unlock new opportunities, and drive
-          sustainable growth.
+          Expert fractional CFO, finance operations, and audit readiness services
+          — powered by AI-enabled automation.
         </p>
         <div className="mt-8 flex justify-center">
           <Link

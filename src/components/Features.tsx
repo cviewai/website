@@ -2,16 +2,16 @@ import { BrainCircuit, Compass, Target } from "lucide-react";
 
 const features = [
   {
+    title: "Expert Finance Guidance",
+    description:
+      "Benefit from strategic financial leadership and planning without the overhead of a full-time executive.",
+    icon: <Compass className="w-12 h-12 mx-auto text-primary" />,
+  },
+  {
     title: "Data-Driven Insights",
     description:
       "Leverage the power of AI to gain actionable intelligence from your data, enabling smarter, more informed business decisions.",
     icon: <BrainCircuit className="w-12 h-12 mx-auto text-primary" />,
-  },
-  {
-    title: "Expert Guidance",
-    description:
-      "Benefit from strategic financial leadership and planning without the overhead of a full-time executive.",
-    icon: <Compass className="w-12 h-12 mx-auto text-primary" />,
   },
   {
     title: "Tailored Solutions",
