@@ -5,8 +5,8 @@ export default function BlogIndexPage() {
   const posts = getAllPosts();
 
   return (
-    <main className="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-3xl">
+    <div className="py-12 md:py-20">
+      <div className="container mx-auto px-6 max-w-3xl">
         <header className="mb-12 text-center">
           <h1 className="text-4xl font-bold tracking-tighter text-slate-900 sm:text-5xl">
             The CrystalView Blog
@@ -22,6 +22,6 @@ export default function BlogIndexPage() {
           ))}
         </div>
       </div>
-    </main>
+    </div>
   );
 }

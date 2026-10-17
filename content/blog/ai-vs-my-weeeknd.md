@@ -28,7 +28,7 @@ I estimated it would take me **five hours**, minimum. And because of deadlines, 
 
 **Enter: AI (Because I Like My Weekends)**
 
-Before diving into spreadsheets, I paused and thought: Why not let AI try first? I’ve been using [Vision](https://vision.crystalview.ai) with Gemini Pro, and it’s been surprisingly capable with structured data and logic-heavy tasks. _To truly understand what I mean, I encourage you to experience Vision by CrystalView for yourself._
+Before diving into spreadsheets, I paused and thought: Why not let AI try first? I’ve been utilizing AI-assisted finance workflows with Gemini Pro, and it’s been surprisingly capable with structured data and logic-heavy accounting tasks.
 
 Well \- I gave it a shot.
 

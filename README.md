@@ -1,6 +1,6 @@
 # CrystalView Website
 
-This is the official marketing and informational website for CrystalView, an AI-powered financial technology company. The site is built with a modern, performant technology stack and serves as the primary entry point for customers to learn about the company, its services, and its flagship product, "Vision".
+This is the official marketing and informational website for CrystalView, an AI-powered financial advisory and technology company. The site is built with a modern, performant technology stack and serves as the primary entry point for customers to learn about the company and its services.
 
 ## Tech Stack
 

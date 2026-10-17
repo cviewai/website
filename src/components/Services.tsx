@@ -17,9 +17,11 @@ const services = [
     title: "System & Process Optimization Services",
     description: "Streamline operations with cutting-edge technology.",
     features: [
-      "Finance Automation",
-      "Accounting Systems Implementation",
-      "Access to Proprietary AI-Assistant and Financial Tool \"Vision\"",
+      "Finance Automation & Workflow Design",
+      "Accounting & ERP Systems Implementation",
+      "Custom AI-Powered Financial Analytics & Dashboards",
+      "Tech Stack Integration (Billing, Payroll, CRM)",
+      "Internal Controls & Automated Audit Trails",
     ],
     icon: <Cog className="w-12 h-12 text-primary" />,
   },
@@ -27,7 +29,7 @@ const services = [
 
 export const Services = () => {
   return (
-    <section className="py-20 md:py-32 bg-secondary/30">
+    <section id="services" className="py-20 md:py-32 bg-secondary/40">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">

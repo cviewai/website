@@ -38,13 +38,17 @@ export const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-xl text-center"
+              className="bg-background p-8 rounded-2xl border border-slate-200/70 shadow-sm hover:border-primary/30 hover:shadow-lg transition-all duration-300 text-center flex flex-col items-center"
             >
-              <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-2xl font-bold text-foreground mb-3">
+              <div className="mb-6 p-4 rounded-2xl bg-primary/5 w-fit">
+                {feature.icon}
+              </div>
+              <h3 className="text-xl font-bold text-foreground mb-3">
                 {feature.title}
               </h3>
-              <p className="text-gray-500">{feature.description}</p>
+              <p className="text-gray-600 leading-relaxed text-sm md:text-base">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>

@@ -9,8 +9,7 @@ This project is the official marketing and informational website for CrystalView
 The website's primary goals are:
 
 - To present a professional and modern brand image.
-- To clearly explain the company's services.
-- To showcase the flagship product, "Vision," a natural language chatbot for querying QuickBooks data.
+- To clearly explain the company's financial services and tech-enabled advisory.
 - To provide a secure and reliable way for potential customers to get in touch.
 
 ## 2. Technology Stack
@@ -28,7 +27,7 @@ The website's primary goals are:
 ## 3. Project Structure
 
 - `src/app/`: Contains the page routes, the root layout, and the global CSS file.
-- `src/components/`: Contains all reusable React components (e.g., `Header`, `Hero`, `ProductShowcase`).
+- `src/components/`: Contains all reusable React components (e.g., `Header`, `Hero`, `Services`, `CTASection`).
 - `src/types/`: Contains custom TypeScript declaration files (e.g., for `zeptomail`).
 - `public/`: Contains static assets like the favicon and social sharing images.
 - `eula.md`, `privacy-policy.md`: Markdown-based content for the legal pages.
